@@ -1,0 +1,53 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPuNXIDAYzLfTo9PRtvSE2L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/davis_-training/blob/main/student%20grade%20analyzer%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "HrQr3192lkVS"
+      },
+      "outputs": [],
+      "source": [
+        "def calculate_grade(marks):\n",
+        "    if marks >= 90:\n",
+        "        return \"A\"\n",
+        "    elif marks >= 75:\n",
+        "        return \"B\"\n",
+        "    elif marks >= 50:\n",
+        "        return \"C\"\n",
+        "    else:\n",
+        "        return \"Fail\"\n",
+        "\n",
+        "for i in range(5):\n",
+        "    m = int(input(f\"Enter marks of student {i+1}: \"))\n",
+        "    print(\"Grade:\", calculate_grade(m))"
+      ]
+    }
+  ]
+}
