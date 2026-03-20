@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPOu7okXA2mmmu2nBuAJyW8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/davis_-training/blob/main/login%20system%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "HrQr3192lkVS"
+      },
+      "outputs": [],
+      "source": [
+        "def login():\n",
+        "    correct_user = \"admin\"\n",
+        "    correct_pass = \"1234\"\n",
+        "\n",
+        "    attempts = 0\n",
+        "    while attempts < 3:\n",
+        "        u = input(\"Enter username: \")\n",
+        "        p = input(\"Enter password: \")\n",
+        "\n",
+        "        if u == correct_user and p == correct_pass:\n",
+        "            print(\"Login Successful\")\n",
+        "            return\n",
+        "        else:\n",
+        "            print(\"Wrong credentials\")\n",
+        "            attempts += 1\n",
+        "\n",
+        "    print(\"Account Locked\")\n",
+        "\n",
+        "login()"
+      ]
+    }
+  ]
+}
